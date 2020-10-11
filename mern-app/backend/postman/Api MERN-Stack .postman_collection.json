@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "6555a511-b390-4404-9cea-418bd0058bc2",
+		"name": "Api MERN-Stack ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/todos/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"description\": \"my third event\",\r\n        \"responsible\": \"mariana\",\r\n        \"priority\": \"medium\",\r\n        \"completed\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/todos/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"todos",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/todos/add/update/:id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"description\": \"my third event\",\r\n        \"responsible\": \"mariana\",\r\n        \"priority\": \"medium\",\r\n        \"completed\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/todos/update/5f82874bf381191a048a0726",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"todos",
+						"update",
+						"5f82874bf381191a048a0726"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/todos/delete/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"description\": \"my third event\",\r\n        \"responsible\": \"mariana\",\r\n        \"priority\": \"medium\",\r\n        \"completed\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/todos/delete/5f82895cf381191a048a0727",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"todos",
+						"delete",
+						"5f82895cf381191a048a0727"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
